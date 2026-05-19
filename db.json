@@ -1,0 +1,68 @@
+{
+  "users": [
+    {
+      "id": "2",
+      "name": "Danish ali",
+      "age": "25",
+      "email": "danish@gmail.com",
+      "city": "Lahore"
+    },
+    {
+      "id": "3",
+      "name": "Ahmed Raza",
+      "age": "20",
+      "email": "ahmed@gmail.com",
+      "city": "Islamabad"
+    },
+    {
+      "id": "4",
+      "name": "Usman Tariq",
+      "age": "28",
+      "email": "usman@gmail.com",
+      "city": "Faisalabad"
+    },
+    {
+      "id": "5",
+      "name": "Hassan Ali",
+      "age": "24",
+      "email": "hassan@gmail.com",
+      "city": "Multan"
+    },
+    {
+      "name": "izaan",
+      "age": "18",
+      "email": "izaan@gmail.com",
+      "city": "kolachi",
+      "id": "SFO9T1So_wE"
+    },
+    {
+      "name": "",
+      "age": "",
+      "email": "",
+      "city": "",
+      "id": "ZZbNpt77ebo"
+    },
+    {
+      "name": "",
+      "age": "",
+      "email": "",
+      "city": "",
+      "id": "SYD56DagIYU"
+    },
+    {
+      "name": "Danish",
+      "age": "56",
+      "email": "hguy@gmail.com",
+      "city": "9",
+      "id": "8iErt-cg-7s"
+    },
+    {
+      "name": "ttfttyfy",
+      "age": "46",
+      "email": "hguy@gmail.com",
+      "city": "karachi",
+      "id": "-x8QoiRTe0A"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

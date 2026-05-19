@@ -1,0 +1,252 @@
+body {
+    background: #f8fafc;
+    color: #0f172a;
+    font-family: 'Inter', system-ui, sans-serif;
+    margin: 0;
+    
+}
+
+.main-heading{
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    font-style: oblique;
+    padding-top: 20px;
+    text-decoration: 4px underline #0284c7;
+
+}
+
+#main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 30px;
+}
+
+
+.card {
+    background: white;
+    border-radius: 20px;
+    padding: 22px;
+    width: 250px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s ease;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #0284c7;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(0,0,0,0.05), transparent);
+    transition: 0.5s;
+}
+
+.card:hover::before {
+    left: 100%;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+
+.card h2 {
+    margin: 6px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    font-style: oblique;
+}
+
+.card h3 {
+    font-size: 13px;
+    color: #64748b;
+}
+
+
+.card button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-style: oblique;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+}
+
+
+.card button:nth-child(6) {
+    background: #fee2e2;
+    color: #dc2626;
+    border-bottom: 3px solid #dc2626;
+}
+
+.card button:nth-child(6):hover {
+    background: #dc2626;
+    color: white;
+}
+
+.card button:nth-child(7) {
+    background: #e0f2fe;
+    color: #0284c7;
+    border-bottom: 3px solid #0284c7;
+}
+
+.card button:nth-child(7):hover {
+    background: #0284c7;
+    color: white;
+}
+
+
+#main-userInfoBox {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 30px;
+}
+
+.userInfoBox {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 330px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    border-left: 3.2px solid #0284c7;
+   
+}
+
+.userInfoBox input {
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    outline: none;
+    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+.userInfoBox input:focus {
+    border-color: #0284c7;
+}
+
+.userInfoBox button {
+    padding: 12px;
+    border-radius: 10px;
+    background:#0284c7;
+    color: white;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    font-style: oblique;
+    font-weight: 900;
+}
+
+.userInfoBox button:hover {
+    background: #0284c7;
+}
+
+
+.post-btn{
+
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #e0f2fe;
+    color: #0284c7;
+    border-bottom: 4px solid #0284c7;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 23px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    font-style: oblique;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+    display: block;
+    margin: 20px auto;
+}
+
+.post-btn:hover {
+    background: #0284c7;
+    color: white;
+}
+
+
+@media (max-width: 1024px) {
+    .card {
+        width: 45%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #main-container {
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .main-heading {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .post-btn {
+        font-size: 18px;
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .card {
+        padding: 16px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .userInfoBox {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .userInfoBox input {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .userInfoBox button {
+        font-size: 14px;
+    }
+}
