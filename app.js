@@ -26,8 +26,8 @@ function render(allUsers) {
             <h2>${v.email}</h2>
             <h2>${v.city}</h2>
             <h3>${v.id}</h3>
-            <button onclick="Delete(${v.id})">Delete</button>
-            <button onclick="Edit(${v.id})">Edit</button>
+            <button onclick="Delete('${v.id}')">Delete</button>
+            <button onclick="Edit('${v.id}')">Edit</button>
            
 
         </div>`
@@ -74,7 +74,7 @@ async function Edit(id) {
             <input type="number" id="age" value="${user.age}">
             <input type="email" id="email" value="${user.email}">
             <input type="text" id="city" value="${user.city}">
-            <button onclick="updateUser(${id})">Update</button>
+            <button onclick="updateUser('${id}')">Update</button>
         </div>
     `;
 }
